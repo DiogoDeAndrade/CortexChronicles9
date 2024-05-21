@@ -1,0 +1,31 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 1280
+height = 720
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = Cortex Chronicles 9
+developer = Diogo de Andrade
+
+[graphics]
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
+
+[render]
+clear_color_red = 0.2
+clear_color_green = 0.5
+clear_color_blue = 0.75
+clear_color_alpha = 1.0
+
+[physics]
+use_fixed_timestep = 1
+debug = 0
+
