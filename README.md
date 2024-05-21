@@ -1,6 +1,6 @@
 # THE CORTEX CHRONICLES, CHAPTER 8 - The Nine Lives of Nyx Sterling
 
-![GameScreenshot](art/title.png)
+![GameScreenshot](screenshots/cat_game.gif)
 
 Developed for the Game Creator's Club at Lusofona University.
 This month, the theme is Cats
