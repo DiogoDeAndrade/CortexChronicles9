@@ -18,7 +18,6 @@ function init(self)
 	-- Remove this function if not needed
 	msg.post("#", "acquire_input_focus")
 	msg.post("@render:", "use_camera_projection")
-	msg.post("operator#camera", "acquire_camera_focus")
  
 	self.acceleration = vmath.vector3(0, 0, 0)
 	self.gravity_scale = 1

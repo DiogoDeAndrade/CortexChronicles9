@@ -1,4 +1,4 @@
-# THE CORTEX CHRONICLES, CHAPTER 8 - The Nine Lives of Nyx Sterling
+# THE CORTEX CHRONICLES, CHAPTER 9 - The Nine Lives of Nyx Sterling
 
 ![GameScreenshot](screenshots/cat_game.gif)
 
@@ -12,7 +12,6 @@ This time, I'm using [Defold](https://defold.com/).
 
 ## Todo
 
-* Improved camera follow
 * UI (9 lives...)
 * Drones that search and shoot
 * Guards that search and shoot
