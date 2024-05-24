@@ -1,0 +1,239 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Rendering.Universal;
+
+public class Drone : MonoBehaviour
+{
+    [SerializeField] private float          speed;
+    [SerializeField] private Transform[]    patrolWaypoints;
+    [SerializeField] private float          pauseBetweenWaypoints = 2.0f;
+    [SerializeField] private Light2D        scanLight;
+    [SerializeField] private float          scanRange = 45.0f;
+    [SerializeField] private float          scanSpeed = 15.0f;
+    [SerializeField] private float          pauseBetweenScans = 1.0f;
+    [SerializeField] private Hypertag       playerTag;
+
+    private int         patrolIndex = 0;
+    private Animator    animator;
+    private float       originalAngle;
+    private Coroutine   patrolCR;
+    private Coroutine   chaseCR;
+    private Coroutine   scanCR;
+    private Coroutine   targetCR;
+    private Transform   playerObject;
+    private float       playerLastSeenTimer;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+
+        originalAngle = scanLight.transform.rotation.eulerAngles.z;
+
+        RunPatrol();
+        RunScan();
+    }
+
+    private void Update()
+    {
+        if (patrolCR != null)
+        {
+            if (SearchPlayer())
+            {
+                RunChase();
+                RunTarget();
+                playerLastSeenTimer = 0;
+            }
+        }
+        else if (targetCR != null)
+        {
+            if (!SearchPlayer())
+            {
+                playerLastSeenTimer += Time.deltaTime;
+                if (playerLastSeenTimer > 4)
+                {
+                    RunPatrol();
+                    RunScan();
+                }
+            }
+            else
+            {
+                playerLastSeenTimer = 0;
+            }
+        }
+    }
+
+    bool SearchPlayer()
+    {
+        if (playerObject == null)
+        {
+            var playerObjectTag = gameObject.FindObjectWithHypertag(playerTag);
+            if (playerObjectTag)
+            {
+                playerObject = playerObjectTag.transform;
+            }
+        }
+        if (playerObject != null)
+        {
+            // Raycast to player to see if it can detect him
+            Vector2 toPlayer = playerObject.transform.position - scanLight.transform.position;
+            float distance = toPlayer.magnitude;
+            if ((distance > 0) && (distance < scanLight.pointLightOuterRadius))
+            {
+                // Check angle
+                toPlayer /= distance;
+                float angle = Vector2.Angle(scanLight.transform.up, toPlayer);
+                if (angle < scanLight.pointLightInnerAngle * 0.5f)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    IEnumerator PatrolCR()
+    {
+        while (true)
+        {
+            animator.SetTrigger("Move");
+            yield return GotoPointCR(patrolWaypoints[patrolIndex]);
+
+            patrolIndex = (patrolIndex + 1) % patrolWaypoints.Length;
+
+            animator.SetTrigger("Scan");
+            yield return new WaitForSeconds(pauseBetweenWaypoints);
+        }
+    }
+
+    IEnumerator GotoPointCR(Transform waypoint)
+    {
+        Quaternion lightRotation = scanLight.transform.rotation;
+        if (waypoint.position.x > transform.position.x)
+        {
+            transform.rotation = Quaternion.identity;
+            scanLight.transform.rotation = lightRotation;
+        }
+        else 
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            scanLight.transform.rotation = lightRotation;
+        }
+
+        while (Vector3.Distance(waypoint.position, transform.position) > 1)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, waypoint.position, speed * Time.deltaTime);
+
+            yield return null;
+        }        
+    }
+
+    IEnumerator ChaseCR()
+    {
+        while (true)
+        {
+            yield return null;
+        }
+    }
+
+    void RunPatrol()
+    {
+        if (chaseCR != null)
+        {
+            StopCoroutine(chaseCR);
+            chaseCR = null;
+        }
+        if (patrolCR == null)
+        {
+            patrolCR = StartCoroutine(PatrolCR());
+        }
+    }
+    void RunChase()
+    {
+        if (patrolCR != null)
+        {
+            StopCoroutine(patrolCR);
+            patrolCR = null;
+        }
+        if (chaseCR == null)
+        {
+            chaseCR = StartCoroutine(ChaseCR());
+        }
+    }
+
+    void RunScan()
+    {
+        if (targetCR != null)
+        {
+            StopCoroutine(targetCR);
+            targetCR = null;
+        }
+        if (scanCR == null)
+        {
+            scanCR = StartCoroutine(ScanCR());
+        }
+    }
+    void RunTarget()
+    {
+        if (scanCR != null)
+        {
+            StopCoroutine(scanCR);
+            scanCR = null;
+        }
+        if (targetCR == null)
+        {
+            targetCR = StartCoroutine(TargetCR());
+        }
+    }
+
+    IEnumerator ScanCR()
+    {
+        while (true)
+        {
+            yield return RotateScanCR(-scanRange);
+            yield return new WaitForSeconds(pauseBetweenScans);
+            yield return RotateScanCR(0);
+            yield return new WaitForSeconds(pauseBetweenScans);
+            yield return RotateScanCR(scanRange);
+            yield return new WaitForSeconds(pauseBetweenScans);
+        }
+    }
+
+    IEnumerator RotateScanCR(float offsetAngle)
+    {
+        float targetAngle = originalAngle + offsetAngle;
+        float currentAngle = scanLight.transform.rotation.eulerAngles.z;
+
+        while (Mathf.Abs(scanLight.transform.rotation.eulerAngles.z - targetAngle) > 1)
+        {
+            currentAngle = Mathf.MoveTowardsAngle(currentAngle, targetAngle, scanSpeed * Time.deltaTime);
+            scanLight.transform.rotation = Quaternion.Euler(0, 0, currentAngle);
+            yield return null;
+        }
+    }
+    IEnumerator TargetCR()
+    {
+        while (true)
+        {
+            if (SearchPlayer())
+            {
+                var toPlayer = (playerObject.transform.position - transform.position).normalized;
+
+                scanLight.transform.rotation = Quaternion.LookRotation(Vector3.forward, toPlayer);
+            }
+
+            yield return null;
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (patrolWaypoints != null)
+        {
+            Gizmos.color = Color.yellow;
+            for (int i = 0; i < patrolWaypoints.Length; i++)
+            {
+                Gizmos.DrawLine(patrolWaypoints[i].position, patrolWaypoints[(i + 1) % patrolWaypoints.Length].position);
+            }
+        }
+    }
+}
