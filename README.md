@@ -8,7 +8,10 @@ This month, the theme is Cats
 This is a part of what I hope will be "The Cortex Chronicles" - I want all the games I do for the Game Creator's Club this year to be linked together, hence this idea.
 I also want to use a different engine on every entry, so let's see how that goes! :)
 
-This time, I'm using [Defold](https://defold.com/).
+Started with the [Defold](https://defold.com/) engine, but there are too little teaching resources, and the whole messaging system makes everything more complicated and less enjoyable.
+Because of that, decided to switch back to Unity and make the game there... I'm failing my "different engine every GCC" challenge, but I don't fail the "a game every GCC" challenge, which is more important! 
+
+But, if we want to get creating with it, I'm using Unity 6 preview, so that kind of qualified as a new engine... :)
 
 ## Todo
 
