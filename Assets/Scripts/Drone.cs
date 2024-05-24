@@ -8,10 +8,17 @@ public class Drone : MonoBehaviour
     [SerializeField] private Transform[]    patrolWaypoints;
     [SerializeField] private float          pauseBetweenWaypoints = 2.0f;
     [SerializeField] private Light2D        scanLight;
+    [SerializeField] private Color          scanColor = Color.yellow;
+    [SerializeField] private Color          targetColor = Color.red;
+    [SerializeField] private LayerMask      environmentMask;
     [SerializeField] private float          scanRange = 45.0f;
     [SerializeField] private float          scanSpeed = 15.0f;
     [SerializeField] private float          pauseBetweenScans = 1.0f;
     [SerializeField] private Hypertag       playerTag;
+    [SerializeField] private float          shotCooldown = 2;
+    [SerializeField] private float          intraVolleyDelay = 0.1f;
+    [SerializeField] private int            volleyCount = 6;
+    [SerializeField] private Projectile     shotPrefab;
 
     private int         patrolIndex = 0;
     private Animator    animator;
@@ -22,6 +29,7 @@ public class Drone : MonoBehaviour
     private Coroutine   targetCR;
     private Transform   playerObject;
     private float       playerLastSeenTimer;
+    private float       shotTimer;
 
     void Awake()
     {
@@ -60,6 +68,11 @@ public class Drone : MonoBehaviour
                 playerLastSeenTimer = 0;
             }
         }
+
+        if (shotTimer > 0)
+        {
+            shotTimer -= Time.deltaTime;
+        }
     }
 
     bool SearchPlayer()
@@ -84,7 +97,10 @@ public class Drone : MonoBehaviour
                 float angle = Vector2.Angle(scanLight.transform.up, toPlayer);
                 if (angle < scanLight.pointLightInnerAngle * 0.5f)
                 {
-                    return true;
+                    // Raycast
+                    var hit = Physics2D.Raycast(scanLight.transform.position, toPlayer, distance * 0.95f, environmentMask);
+
+                    return (hit.collider == null);
                 }
             }
         }
@@ -187,6 +203,7 @@ public class Drone : MonoBehaviour
 
     IEnumerator ScanCR()
     {
+        scanLight.color = scanColor;
         while (true)
         {
             yield return RotateScanCR(-scanRange);
@@ -212,17 +229,55 @@ public class Drone : MonoBehaviour
     }
     IEnumerator TargetCR()
     {
+        scanLight.color = targetColor;
         while (true)
         {
             if (SearchPlayer())
-            {
+            {                
                 var toPlayer = (playerObject.transform.position - transform.position).normalized;
 
-                scanLight.transform.rotation = Quaternion.LookRotation(Vector3.forward, toPlayer);
+                scanLight.transform.rotation = Quaternion.RotateTowards(scanLight.transform.rotation, Quaternion.LookRotation(Vector3.forward, toPlayer), 360.0f * Time.deltaTime);
+
+                float angle = Vector3.Angle(scanLight.transform.up, toPlayer);
+                if ((angle < 5.0f) && (shotTimer <= 0))
+                {
+                    StartCoroutine(ShootCR());
+                }
             }
 
             yield return null;
         }
+    }
+
+    IEnumerator ShootCR()
+    {
+        shotTimer = shotCooldown;
+
+        for (int i = 0; i < volleyCount; i++)
+        {
+            Shoot();
+            yield return new WaitForSeconds(intraVolleyDelay);
+        }
+    }
+
+    void Shoot()
+    {
+        Vector3 direction = scanLight.transform.up;
+        direction = ChangeAngle(direction, Random.Range(-4.0f, 4.0f));
+        Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction);
+        Instantiate(shotPrefab, scanLight.transform.position, rotation);
+    }
+
+    Vector3 ChangeAngle(Vector3 baseDir, float angle)
+    {
+        Vector3 ret = baseDir;
+        float   a = Mathf.Deg2Rad * angle;
+        float   c = Mathf.Cos(a);
+        float   s = Mathf.Sin(a);
+        ret.x = ret.x * c - ret.y * s;
+        ret.y = ret.x * s + ret.y * c;
+
+        return ret;
     }
 
     private void OnDrawGizmosSelected()
