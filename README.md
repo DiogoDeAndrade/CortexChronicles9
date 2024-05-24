@@ -32,6 +32,7 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 
 ## Code
 
+- Some code was adapted/refactored from [Okapi Kit], licensed under the [MIT] license.
 - All remaining game source code by Diogo de Andrade is licensed under the [MIT] license.
 
 ## Metadata
@@ -43,3 +44,4 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 [CC-BY 3.0]:https://creativecommons.org/licenses/by/3.0/
 [CC-BY-SA 4.0]:http://creativecommons.org/licenses/by-sa/4.0/
 [MIT]:LICENSE
+[Okapi Kit]:https://github.com/VideojogosLusofona/OkapiKit
