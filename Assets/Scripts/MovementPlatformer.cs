@@ -262,8 +262,8 @@ public class MovementPlatformer : MonoBehaviour
             if (isGroundedParameter != "") animator.SetBool(isGroundedParameter, actualIsGrounded);
         }
 
-        if ((deltaX > epsilonZero) && (transform.right.x > 0.0f)) transform.rotation *= Quaternion.Euler(0, 180, 0);
-        else if ((deltaX < -epsilonZero) && (transform.right.x < 0.0f)) transform.rotation *= Quaternion.Euler(0, 180, 0);
+        if ((deltaX > epsilonZero) && (transform.right.x < 0.0f)) transform.rotation *= Quaternion.Euler(0, 180, 0);
+        else if ((deltaX < -epsilonZero) && (transform.right.x > 0.0f)) transform.rotation *= Quaternion.Euler(0, 180, 0);
     }
 
     void UpdateGroundState()

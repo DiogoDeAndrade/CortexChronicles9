@@ -14,10 +14,17 @@ public class ProbDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.rotation = Quaternion.identity;
+        if (player.isDead)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.rotation = Quaternion.identity;
 
-        float p = player.probHit;
+            float p = player.probHit;
 
-        fill.transform.localScale = new Vector3(p, 1, 1);
+            fill.transform.localScale = new Vector3(p, 1, 1);
+        }
     }
 }

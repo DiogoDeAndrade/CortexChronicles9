@@ -15,9 +15,6 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 
 ## Todo
 
-* UI (9 lives...)
-* Guards that search
-* Guards that shoot
 * Storytelling elements
 * Level design
 * Secret level!

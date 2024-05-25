@@ -14,7 +14,6 @@ public class Drone : MonoBehaviour
     [SerializeField] private float          scanRange = 45.0f;
     [SerializeField] private float          scanSpeed = 15.0f;
     [SerializeField] private float          pauseBetweenScans = 1.0f;
-    [SerializeField] private Hypertag       playerTag;
     [SerializeField] private float          shotCooldown = 2;
     [SerializeField] private float          intraVolleyDelay = 0.1f;
     [SerializeField] private int            volleyCount = 6;
@@ -27,9 +26,9 @@ public class Drone : MonoBehaviour
     private Coroutine   chaseCR;
     private Coroutine   scanCR;
     private Coroutine   targetCR;
-    private Transform   playerObject;
     private float       playerLastSeenTimer;
     private float       shotTimer;
+    private Player      player;
 
     void Awake()
     {
@@ -77,18 +76,14 @@ public class Drone : MonoBehaviour
 
     bool SearchPlayer()
     {
-        if (playerObject == null)
+        if (player == null)
         {
-            var playerObjectTag = gameObject.FindObjectWithHypertag(playerTag);
-            if (playerObjectTag)
-            {
-                playerObject = playerObjectTag.transform;
-            }
+            player = FindAnyObjectByType<Player>();
         }
-        if (playerObject != null)
+        if ((player != null) && (!player.isDead))
         {
             // Raycast to player to see if it can detect him
-            Vector2 toPlayer = playerObject.transform.position - scanLight.transform.position;
+            Vector2 toPlayer = player.transform.position - scanLight.transform.position;
             float distance = toPlayer.magnitude;
             if ((distance > 0) && (distance < scanLight.pointLightOuterRadius))
             {
@@ -234,7 +229,7 @@ public class Drone : MonoBehaviour
         {
             if (SearchPlayer())
             {                
-                var toPlayer = (playerObject.transform.position - transform.position).normalized;
+                var toPlayer = (player.transform.position - transform.position).normalized;
 
                 scanLight.transform.rotation = Quaternion.RotateTowards(scanLight.transform.rotation, Quaternion.LookRotation(Vector3.forward, toPlayer), 360.0f * Time.deltaTime);
 

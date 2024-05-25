@@ -545,6 +545,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   probabilityDecay: 0.1
   probabilityDecayByDistance: 0.005
+  deadCatPrefab: {fileID: 2664018608431187223, guid: 27709131a04d01342bb5034d03d801fc, type: 3}
+  catSpiritPrefab: {fileID: 3107627534637851272, guid: f47075b1bd474b04aa546ebfb4aefdfa, type: 3}
 --- !u!1 &6087391001913347848
 GameObject:
   m_ObjectHideFlags: 0

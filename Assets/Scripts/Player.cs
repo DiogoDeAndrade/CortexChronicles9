@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float probabilityDecay = 0.1f;
-    [SerializeField] private float probabilityDecayByDistance = 0.005f;
+    [SerializeField] private float      probabilityDecay = 0.1f;
+    [SerializeField] private float      probabilityDecayByDistance = 0.005f;
+    [SerializeField] private GameObject deadCatPrefab;
+    [SerializeField] private CatSpirit  catSpiritPrefab;
 
-    float currentHitProbability = 0.0f;
-    Vector3 prevPos;
+    float       currentHitProbability = 0.0f;
+    Vector3     prevPos;
+    bool        dead = false;
 
     public float probHit => currentHitProbability;
+    public bool  isDead => dead;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         prevPos = transform.position;
@@ -30,11 +33,23 @@ public class Player : MonoBehaviour
 
     public void ProbabilityHit(float prob)
     {
+        if (isDead) return;
+
         if (currentHitProbability > 0.3f)
         {
             if (Random.Range(0.0f, 1.0f) < currentHitProbability)
             {
-                Destroy(gameObject);
+                dead = true;
+                
+                if (deadCatPrefab)
+                {
+                    var deadCat= Instantiate(deadCatPrefab, transform.position, transform.rotation);
+                    Destroy(gameObject);
+                }
+                if (catSpiritPrefab)
+                {
+                    Instantiate(catSpiritPrefab, transform.position, transform.rotation);
+                }
             }
             else
             {

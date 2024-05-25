@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] private LayerMask  playerMask;
     [SerializeField] private float      hitProbabilityInFlight = 0.1f;
     [SerializeField] private float      hitProbabilityInGround = 0.1f;
+    [SerializeField] private float      groundHitRadius = 10.0f;
     [SerializeField] private GameObject hitFx;
 
     float   distance = 1000.0f;
@@ -37,7 +38,7 @@ public class Projectile : MonoBehaviour
         foreach (var hit in hits)
         {
             var player = hit.collider.GetComponent<Player>();
-            if (player != null)
+            if (player != null) 
             {
                 player.ProbabilityHit(hitProbabilityInFlight);
             }
@@ -56,7 +57,7 @@ public class Projectile : MonoBehaviour
             if (hitProbabilityInGround > 0)
             {
                 // Detect if player is somewhere around
-                var hits = Physics2D.OverlapCircleAll(targetPos, 5.0f, playerMask);
+                var hits = Physics2D.OverlapCircleAll(targetPos, groundHitRadius, playerMask);
                 foreach (var hit in hits)
                 {
                     var player = hit.GetComponent<Player>();

@@ -96,7 +96,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 1
@@ -547,6 +547,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: main_cat_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd6ddea0d0416547adb93b787346028
+      internalID: -2037686715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -568,6 +590,7 @@ TextureImporter:
       main_cat_14: 1020207038404445920
       main_cat_15: -580250790016689026
       main_cat_16: -1428080972757964764
+      main_cat_17: -2037686715
       main_cat_2: 8728068212851374451
       main_cat_3: -9177586790740015848
       main_cat_4: 537739798177846150
