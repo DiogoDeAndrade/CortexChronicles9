@@ -15,7 +15,7 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 
 ## Todo
 
-* Storytelling elements
+* Drone movement/tracking in chase mode
 * Level design
 * Secret level!
 
@@ -24,6 +24,7 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 - Cat sprites by [Shepardskin](https://opengameart.org/users/shepardskin)
 - Drone sprites by [Craftpix]
 - Industrial tileset by [Craftpix]
+- Font [Forced Square] by Friendly Fonts, free for personal use.
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
 ## Sound
@@ -44,3 +45,4 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 [MIT]:LICENSE
 [Craftpix]:https://craftpix.net
 [Okapi Kit]:https://github.com/VideojogosLusofona/OkapiKit
+[Forced Square]:https://www.dafont.com/pt/forced-square.font

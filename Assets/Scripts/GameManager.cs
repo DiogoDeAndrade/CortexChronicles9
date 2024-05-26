@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    const int maxLives = 3;
+    const int maxLives = 9;
 
     Player  player;
     int     _nLives = maxLives;
@@ -51,5 +51,9 @@ public class GameManager : MonoBehaviour
     public void GotoScene(int sceneId)
     {
         SceneManager.LoadScene(sceneId);
+    }
+    public void GotoScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

@@ -5,7 +5,7 @@ using NaughtyAttributes;
 public class GameOver : MonoBehaviour
 {
     [SerializeField, Scene]
-    private int menuScene;
+    private string menuScene;
 
     Image   image;
     float   timer = 1.0f;
