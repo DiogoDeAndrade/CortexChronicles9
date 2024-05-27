@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private Transform  _catTarget;
     [SerializeField] private float      probabilityDecay = 0.1f;
     [SerializeField] private float      probabilityDecayByDistance = 0.005f;
     [SerializeField] private GameObject deadCatPrefab;
@@ -13,6 +14,8 @@ public class Player : MonoBehaviour
 
     public float probHit => currentHitProbability;
     public bool  isDead => dead;
+
+    public Transform targetPos => (_catTarget != null) ? (_catTarget) : (transform);
 
     void Start()
     {

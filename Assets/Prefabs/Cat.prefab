@@ -543,6 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c39b79bbebf004786b10601c202900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _catTarget: {fileID: 3517500348809804400}
   probabilityDecay: 0.1
   probabilityDecayByDistance: 0.005
   deadCatPrefab: {fileID: 2664018608431187223, guid: 27709131a04d01342bb5034d03d801fc, type: 3}
@@ -624,7 +625,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3517500348809804400}
-  - component: {fileID: 5882673552711003699}
   m_Layer: 7
   m_Name: CatTarget
   m_TagString: Untagged
@@ -647,17 +647,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1119742082053034407}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5882673552711003699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8709309327458971658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2839d67013646484a855025e53028159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hypertags:
-  - {fileID: 11400000, guid: 7dbb3966c50cda64a930cc5d7dac0572, type: 2}

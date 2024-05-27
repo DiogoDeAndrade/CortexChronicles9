@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -13,6 +14,7 @@ public class Drone : MonoBehaviour
     [SerializeField] private LayerMask      environmentMask;
     [SerializeField] private float          scanRange = 45.0f;
     [SerializeField] private float          scanSpeed = 15.0f;
+    [SerializeField] private float          minScanRange = 100.0f;
     [SerializeField] private float          pauseBetweenScans = 1.0f;
     [SerializeField] private float          shotCooldown = 2;
     [SerializeField] private float          intraVolleyDelay = 0.1f;
@@ -29,6 +31,7 @@ public class Drone : MonoBehaviour
     private float       playerLastSeenTimer;
     private float       shotTimer;
     private Player      player;
+    private Transform   playerTransform;
 
     void Awake()
     {
@@ -79,18 +82,21 @@ public class Drone : MonoBehaviour
         if (player == null)
         {
             player = FindAnyObjectByType<Player>();
+            if (player) playerTransform = player.targetPos;
         }
         if ((player != null) && (!player.isDead))
         {
             // Raycast to player to see if it can detect him
-            Vector2 toPlayer = player.transform.position - scanLight.transform.position;
+            Vector2 toPlayer = playerTransform.position - scanLight.transform.position;
             float distance = toPlayer.magnitude;
             if ((distance > 0) && (distance < scanLight.pointLightOuterRadius))
             {
                 // Check angle
                 toPlayer /= distance;
+
                 float angle = Vector2.Angle(scanLight.transform.up, toPlayer);
-                if (angle < scanLight.pointLightInnerAngle * 0.5f)
+                // Check if angle is within cone, or if the cat is very close, just in front
+                if ((angle < scanLight.pointLightInnerAngle * 0.5f) || ((distance < minScanRange) && (angle < 180.0f)))
                 {
                     // Raycast
                     var hit = Physics2D.Raycast(scanLight.transform.position, toPlayer, distance * 0.95f, environmentMask);
@@ -227,9 +233,13 @@ public class Drone : MonoBehaviour
         scanLight.color = targetColor;
         while (true)
         {
+            // Search for closest position to player that has line of sight
+            Vector3 closestPos = FindClosestPositionWithLOS();
+            transform.position = Vector3.MoveTowards(transform.position, closestPos, speed * Time.deltaTime);
+
             if (SearchPlayer())
             {                
-                var toPlayer = (player.transform.position - transform.position).normalized;
+                var toPlayer = (playerTransform.position - transform.position).normalized;
 
                 scanLight.transform.rotation = Quaternion.RotateTowards(scanLight.transform.rotation, Quaternion.LookRotation(Vector3.forward, toPlayer), 360.0f * Time.deltaTime);
 
@@ -273,6 +283,63 @@ public class Drone : MonoBehaviour
         ret.y = ret.x * s + ret.y * c;
 
         return ret;
+    }
+
+    private Vector3 FindClosestPositionWithLOS()
+    {
+        Vector3 ret = transform.position;
+        if (player == null)
+        {
+            player = FindAnyObjectByType<Player>();
+            if (player) playerTransform = player.targetPos;
+        }
+        if ((player != null) && (!player.isDead))
+        {
+            Vector3 playerPos = playerTransform.position;
+            float   minDist = Vector3.Distance(ret, playerPos);
+
+            for (int i = 0; i < patrolWaypoints.Length; i++)
+            {
+                Vector3 p1 = patrolWaypoints[i].position;
+                Vector3 p2 = patrolWaypoints[(i + 1) % patrolWaypoints.Length].position;
+
+                Vector3 p = FindClosestPointOnLineSegment(p1, p2, playerPos);
+                float   d = Vector3.Distance(p, playerPos);
+                if ((d > 0) && (d < minDist))
+                {
+                    // Raycast
+                    var toPlayer = (playerPos - p) / d;
+                    var hit = Physics2D.Raycast(p, toPlayer, d * 0.95f, environmentMask);
+
+                    if (hit.collider == null)
+                    {
+                        ret = p;
+                        minDist = d;
+                    }
+                }
+            }
+        }
+
+        return ret;
+    }
+
+    public static Vector3 FindClosestPointOnLineSegment(Vector3 A, Vector3 B, Vector3 P)
+    {
+        Vector3 AB = B - A;
+        Vector3 AP = P - A;
+
+        // Calculate the projection scalar t
+        float magnitudeAB = AB.sqrMagnitude; // The square of the length of AB
+        float ABAPproduct = Vector3.Dot(AP, AB); // The dot product of AP and AB
+        float t = ABAPproduct / magnitudeAB;
+
+        // Clamp t to be in the range [0, 1]
+        t = Mathf.Clamp01(t);
+
+        // Calculate the closest point
+        Vector3 closestPoint = A + AB * t;
+
+        return closestPoint;
     }
 
     private void OnDrawGizmosSelected()

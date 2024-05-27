@@ -14,11 +14,14 @@ public class Projectile : MonoBehaviour
     Vector3 targetPos;
     Vector3 normal;
     Vector3 prevPos;
+    Vector3 origin;
 
     void Start()
     {
+        origin = transform.position;
+
         // Let's determine where the shot will hit
-        var hit = Physics2D.Raycast(transform.position, transform.up, float.MaxValue, environmentMask);
+        var hit = Physics2D.Raycast(origin, transform.up, float.MaxValue, environmentMask);
         if (hit.collider != null)
         {
             distance = hit.distance;
@@ -40,7 +43,9 @@ public class Projectile : MonoBehaviour
             var player = hit.collider.GetComponent<Player>();
             if (player != null) 
             {
-                player.ProbabilityHit(hitProbabilityInFlight);
+                float p = hitProbabilityInFlight;
+                if (Vector3.Distance(transform.position, origin) < 10.0f) p = 0.8f;
+                player.ProbabilityHit(p);
             }
         }
 
@@ -63,7 +68,9 @@ public class Projectile : MonoBehaviour
                     var player = hit.GetComponent<Player>();
                     if (player != null)
                     {
-                        player.ProbabilityHit(hitProbabilityInGround);
+                        float p = hitProbabilityInGround;
+                        if (Vector3.Distance(transform.position, origin) < 10.0f) p = 0.8f;
+                        player.ProbabilityHit(p);
                     }
                 }
             }
