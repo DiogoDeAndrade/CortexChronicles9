@@ -38,9 +38,9 @@ public class Player : MonoBehaviour
     {
         if (isDead) return;
 
-        if (currentHitProbability > 0.3f)
+        if ((currentHitProbability > 0.3f) || (prob >= 1.0f))
         {
-            if (Random.Range(0.0f, 1.0f) < currentHitProbability)
+            if ((Random.Range(0.0f, 1.0f) < currentHitProbability) || (prob >= 1.0f))
             {
                 dead = true;
                 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 827cc6ad34832654e99ed1595fedaeb5
+guid: 00310fc78ea92604da780e87a94ff32b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -246729696008504304
-    second: industrial_tileset_0
+      213: 5287246918721202034
+    second: industrial_tileset_emissive_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,1783 +126,1761 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: industrial_tileset_0
+      name: industrial_tileset_emissive_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01c7fd116a0739cf0800000000000000
-      internalID: -246729696008504304
+      spriteID: 277e72e3f03106940800000000000000
+      internalID: 5287246918721202034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_1
+      name: industrial_tileset_emissive_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2be43c0a5ec233444b8972b1431bc3ff
-      internalID: -1477375329
+      spriteID: 58fe628d6d5c091458c2b2fd6a497fe9
+      internalID: -51621008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_2
+      name: industrial_tileset_emissive_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d773c1c1c3f039c47ba1e20af07be2f0
-      internalID: 1777078161
+      spriteID: 3d90eb8532fa2cb4582e6f22068e7bb4
+      internalID: -1116224403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_3
+      name: industrial_tileset_emissive_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0d209d162b4209408874f8832e7e739
-      internalID: 872704324
+      spriteID: f97b3db75137ed84da87a13495172ad6
+      internalID: -1856555042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_4
+      name: industrial_tileset_emissive_4
       rect:
         serializedVersion: 2
         x: 256
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c249d284d1796d24dbb314498970bb39
-      internalID: 1975320520
+      spriteID: aa7c1421d5ac4dd43b9fa6eca75b40ef
+      internalID: 69271226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_5
+      name: industrial_tileset_emissive_5
       rect:
         serializedVersion: 2
         x: 320
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a9c22b92182dbe43aabe8c7eeca1126
-      internalID: 1496191565
+      spriteID: e7fbcb42615d4cc479e2dffd30d655db
+      internalID: 1550066552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_6
+      name: industrial_tileset_emissive_6
       rect:
         serializedVersion: 2
         x: 384
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e3b92118e58b9241ab90fda82d5b3b1
-      internalID: -656026463
+      spriteID: aae007b1aa88d9640bad4dda1a04de49
+      internalID: 1873135961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_7
+      name: industrial_tileset_emissive_7
       rect:
         serializedVersion: 2
         x: 448
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 074d42659ccd904408688ac19803c1e4
-      internalID: 548594664
+      spriteID: e102eb0373aa8df4eb56a9dcf4d5b6ca
+      internalID: -1543419864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_8
+      name: industrial_tileset_emissive_8
       rect:
         serializedVersion: 2
         x: 512
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b732030d4d89214db328bfb14beda98
-      internalID: -1032747869
+      spriteID: 241846f7c75b8bf428bd80381083c444
+      internalID: -1725192579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_9
+      name: industrial_tileset_emissive_9
       rect:
         serializedVersion: 2
         x: 576
-        y: 512
+        y: 480
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 580c8527ab825724eb3f8fbbf87e8552
-      internalID: -1840697470
+      spriteID: 309d0b8492be9404b8f480cc7bb79e3b
+      internalID: -658107986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_10
+      name: industrial_tileset_emissive_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ac7366d48c25714b93d13bd134ce5c5
-      internalID: 2087438787
+      spriteID: 447cb6631049cf74d9ef78b5c6907926
+      internalID: -598825584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_11
+      name: industrial_tileset_emissive_11
       rect:
         serializedVersion: 2
         x: 64
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7676166c2704304da5b8c6a2b470459
-      internalID: -983914095
+      spriteID: 70b29a36768d87542a4a5841ce6b7147
+      internalID: 1490312634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_12
+      name: industrial_tileset_emissive_12
       rect:
         serializedVersion: 2
         x: 128
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 379c0f5ce97dc0440ac8885e74f5c3b3
-      internalID: -823979818
+      spriteID: b729170e1a57fb74cb865826c3241058
+      internalID: 75816654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_13
+      name: industrial_tileset_emissive_13
       rect:
         serializedVersion: 2
         x: 192
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd11678501cf6b1489291068a89ab43e
-      internalID: 1970312597
+      spriteID: daf67ca34de449248a24547d0c0df345
+      internalID: -1455673635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_14
+      name: industrial_tileset_emissive_14
       rect:
         serializedVersion: 2
         x: 256
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04536943d53d03247890402d86f3ae6e
-      internalID: -311327218
+      spriteID: 831cc972d2b3b474bb23077f42db087f
+      internalID: 1473659622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_15
+      name: industrial_tileset_emissive_15
       rect:
         serializedVersion: 2
         x: 320
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cdd938148ee5804399da8d6c1f5baea
-      internalID: 954246710
+      spriteID: f10a0b0a4d7e5554fa26e29a954f1a0a
+      internalID: 1366507005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_16
+      name: industrial_tileset_emissive_16
       rect:
         serializedVersion: 2
         x: 384
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff1f97267981b324eaa21f0c64e03e1f
-      internalID: 1717663412
+      spriteID: 976c76e7e75758e46bd36ffedbaca41e
+      internalID: 1698001704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_17
+      name: industrial_tileset_emissive_17
       rect:
         serializedVersion: 2
         x: 448
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04fef786d57563542adf63b72333ea6e
-      internalID: -184679891
+      spriteID: 39ebdf77f663d9e489ae32321d61d741
+      internalID: 511345521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_18
+      name: industrial_tileset_emissive_18
       rect:
         serializedVersion: 2
         x: 512
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fc41eded49d37341ae65a5f22acbeba
-      internalID: -1014530800
+      spriteID: c6180c1624378a640b0544949b6cfc0c
+      internalID: -292171481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_19
+      name: industrial_tileset_emissive_19
       rect:
         serializedVersion: 2
         x: 576
-        y: 448
+        y: 416
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be343911bd5281946aee9ffc52d3f35f
-      internalID: 1059337663
+      spriteID: 75ba048fe347c7b47bb15c0c3936a1ba
+      internalID: -1719082179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_20
+      name: industrial_tileset_emissive_20
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e15d95ce92643db47b8b8e36fea6bf55
-      internalID: -2088907221
+      spriteID: c76a07e3774aff0409650973cc665a7c
+      internalID: 433121135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_21
+      name: industrial_tileset_emissive_21
       rect:
         serializedVersion: 2
         x: 64
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff2dde81fa74dcb4085094951bdc2887
-      internalID: 522293517
+      spriteID: f67eb9da227d3764b9b74807665dd90f
+      internalID: -1070173832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_22
+      name: industrial_tileset_emissive_22
       rect:
         serializedVersion: 2
         x: 128
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faa7f1bcaf6a27a49976b0aae2b117ce
-      internalID: 380486402
+      spriteID: 7629e84854e22824a96755c0f4272686
+      internalID: -1917061117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_23
+      name: industrial_tileset_emissive_23
       rect:
         serializedVersion: 2
         x: 192
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20074dd2212578b4982814a34e1a3327
-      internalID: -1540572663
+      spriteID: cc3be150c4c0c8940a7a4564b1669542
+      internalID: -2095648853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_24
+      name: industrial_tileset_emissive_24
       rect:
         serializedVersion: 2
         x: 256
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94484258df9e5904fba1f30bb8899bfc
-      internalID: 1755335328
+      spriteID: 9985d6c4ea6082141be23a13ab23ff3e
+      internalID: 121906172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_25
+      name: industrial_tileset_emissive_25
       rect:
         serializedVersion: 2
         x: 320
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30d1c4dc304644a4d897c320b1d963e2
-      internalID: 284155806
+      spriteID: d7f3c3d1fa05d6040ba0f39a980e248d
+      internalID: 862197887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_26
+      name: industrial_tileset_emissive_26
       rect:
         serializedVersion: 2
         x: 384
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f4d4548a75e86847bdb191778326378
-      internalID: 1767600374
+      spriteID: 8070b3190fb70eb47907b1914df50d02
+      internalID: 2113870903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_27
+      name: industrial_tileset_emissive_27
       rect:
         serializedVersion: 2
         x: 448
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dab573d5137306c418bfdebec536ac64
-      internalID: 887735577
+      spriteID: 79fde71ac6179b9469587a819bc4fa9f
+      internalID: 1889931536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_28
+      name: industrial_tileset_emissive_28
       rect:
         serializedVersion: 2
         x: 512
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 300ebf382cf86f044916bd02cb314a2c
-      internalID: 1770694541
+      spriteID: 9c1bf7b0e456dee47b8b2e386b92149a
+      internalID: -1580855970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_29
+      name: industrial_tileset_emissive_29
       rect:
         serializedVersion: 2
         x: 576
-        y: 384
+        y: 352
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4f475a616ba1314194c6884c8d10875
-      internalID: -1854972930
+      spriteID: 35eaf4892cfc7da4f89fbdc313acb790
+      internalID: 1197341399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_30
+      name: industrial_tileset_emissive_30
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c651d013400bc84ba4acb99c30c3c3f
-      internalID: -1450885631
+      spriteID: 72512475ef3d5f84fb767b8dc5a1707f
+      internalID: 1784068794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_31
+      name: industrial_tileset_emissive_31
       rect:
         serializedVersion: 2
         x: 64
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab536c44606c60a4eb746708e8683abb
-      internalID: -427338212
+      spriteID: 640aebda1ee0fd4468a14f4c3bcfec03
+      internalID: -1277667502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_32
+      name: industrial_tileset_emissive_32
       rect:
         serializedVersion: 2
         x: 128
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f5e769e44635af4c9ad8894233696f0
-      internalID: 236920382
+      spriteID: e20fb231126c26e48a70a710003edb30
+      internalID: -643685561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_33
+      name: industrial_tileset_emissive_33
       rect:
         serializedVersion: 2
         x: 192
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0251b7c31ed08ab4bb3d197951e2c373
-      internalID: 426570987
+      spriteID: f12d6f5d764170e4bb60946d0eff66dd
+      internalID: 1464109491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_34
+      name: industrial_tileset_emissive_34
       rect:
         serializedVersion: 2
         x: 256
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bd8a8f80d3c94c429f158b795d3e072
-      internalID: -1481990617
+      spriteID: 7310adb5363bd7546b248ffba823e67b
+      internalID: 708008236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_35
+      name: industrial_tileset_emissive_35
       rect:
         serializedVersion: 2
         x: 320
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ee137808c675a1419130f107b63752f
-      internalID: -779153020
+      spriteID: a55f59ceb8c882640805dbd6fb37731a
+      internalID: 1692846782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_36
+      name: industrial_tileset_emissive_36
       rect:
         serializedVersion: 2
         x: 384
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eda41a53747eab4f936e461084e95c8
-      internalID: 1077399237
+      spriteID: 976bd0ec22acf1e44bac7f97764079e0
+      internalID: 507848900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_37
+      name: industrial_tileset_emissive_37
       rect:
         serializedVersion: 2
         x: 448
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35b90a154fd462447985bf71b1c9c8cc
-      internalID: 779665067
+      spriteID: 61eff84e04fa6db4bb735359bcb8e1ca
+      internalID: -1743566062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_38
+      name: industrial_tileset_emissive_38
       rect:
         serializedVersion: 2
         x: 512
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfc340f92d431a9469bbd11f2a9b265e
-      internalID: -1677542553
+      spriteID: 5f35f37bf09c2394f80dde922cce97f3
+      internalID: -247974377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_39
+      name: industrial_tileset_emissive_39
       rect:
         serializedVersion: 2
         x: 576
-        y: 320
+        y: 288
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: accbb8c8f4aaf9049935db5a02f5c560
-      internalID: 1798405072
+      spriteID: b9ddcd0a893893c4b9b0cc57df75ebf1
+      internalID: 1779855101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_40
+      name: industrial_tileset_emissive_40
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5f6f3b9dac85f64299b94cb57f34d5d
-      internalID: -1622642581
+      spriteID: 9447a9250c602db44bf966486e066d7d
+      internalID: -688204569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_41
+      name: industrial_tileset_emissive_41
       rect:
         serializedVersion: 2
         x: 64
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4718eee5df1e2e7419a2e19c798b141b
-      internalID: -1767333933
+      spriteID: 47a80035533c5f342b915c5598565da0
+      internalID: 1465207786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_42
+      name: industrial_tileset_emissive_42
       rect:
         serializedVersion: 2
         x: 128
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebedfee056d5ca0458ad84b2470fd0c1
-      internalID: 1208347406
+      spriteID: 189955420906e534bbc84073576a2d62
+      internalID: -724927825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_43
+      name: industrial_tileset_emissive_43
       rect:
         serializedVersion: 2
         x: 192
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1a5ebb749461e748823c9ddb10805a6
-      internalID: -420748341
+      spriteID: 5b835afe698f75848bfab8a294959393
+      internalID: -1033935826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_44
+      name: industrial_tileset_emissive_44
       rect:
         serializedVersion: 2
         x: 256
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fdb62876fe2fcf48bc2f1a5c991e579
-      internalID: -1313445832
+      spriteID: 856f1342eb5830545bb6337f943cf00f
+      internalID: 1119346102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_45
+      name: industrial_tileset_emissive_45
       rect:
         serializedVersion: 2
         x: 320
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e74224bdd3c05741bb51ede83ab652d
-      internalID: 1301475322
+      spriteID: 62dec26b078535d449636e208560a1ad
+      internalID: 1201789490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_46
+      name: industrial_tileset_emissive_46
       rect:
         serializedVersion: 2
         x: 384
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f82430ca777f12e47b7639d38306511f
-      internalID: -1761430577
+      spriteID: a127f31408e076647a7ec1b1ffdbb6a3
+      internalID: -1359597610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_47
+      name: industrial_tileset_emissive_47
       rect:
         serializedVersion: 2
         x: 448
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 386d02fc37379024b9c2519e0d7ac45c
-      internalID: 671094275
+      spriteID: 291ad610efceb2442aead5df1d9666c0
+      internalID: -658080449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_48
+      name: industrial_tileset_emissive_48
       rect:
         serializedVersion: 2
         x: 512
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3d852a22d090884a91631478562df52
-      internalID: 1860478580
+      spriteID: 644ec2e7e294818419b8135a03190a68
+      internalID: -56684211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_49
+      name: industrial_tileset_emissive_49
       rect:
         serializedVersion: 2
         x: 576
-        y: 256
+        y: 224
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c39ade7108209a54592b89534f0674a9
-      internalID: 819409793
+      spriteID: 9ff4c3c0bf0b3b24f97d520c5caccf32
+      internalID: -1608950720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_50
+      name: industrial_tileset_emissive_50
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a790159d8612fb46a806ca7bbea761b
-      internalID: 267259637
+      spriteID: c8f470fa402177f439289fad50aa5453
+      internalID: 855958570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_51
+      name: industrial_tileset_emissive_51
       rect:
         serializedVersion: 2
         x: 64
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf5a73d8554e8984b8072a97543102bd
-      internalID: -1945747405
+      spriteID: 17d57eeb4877de64aa2874c4f3ff9f33
+      internalID: 1265659580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_52
+      name: industrial_tileset_emissive_52
       rect:
         serializedVersion: 2
         x: 128
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f72f2ef442bda94d8fcd23453fadc8a
-      internalID: 2039453269
+      spriteID: eca03bc5e43560e44942f005a422895a
+      internalID: -176542826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_53
+      name: industrial_tileset_emissive_53
       rect:
         serializedVersion: 2
         x: 192
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27558d4987bfbb74a9bfad1fadb38f7b
-      internalID: -1011563638
+      spriteID: d2a9f1b893da7b244bf636508513a03d
+      internalID: -2108133140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_54
+      name: industrial_tileset_emissive_54
       rect:
         serializedVersion: 2
         x: 256
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26fc31832acee104ba2572e225a5b488
-      internalID: 305090917
+      spriteID: 6d5e9e75330eb4c47bc6bcd401a2eab3
+      internalID: 531083574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_55
+      name: industrial_tileset_emissive_55
       rect:
         serializedVersion: 2
         x: 320
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c1b1a78c8056664c97d89e19c17ae70
-      internalID: 1012506247
+      spriteID: b01a90e7a5a91af4bb9b4cb9c4a27e00
+      internalID: -1065119698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_56
+      name: industrial_tileset_emissive_56
       rect:
         serializedVersion: 2
         x: 384
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d7093d58b9d62741b304efc15e935a3
-      internalID: -1610175423
+      spriteID: 8bcb15357b0cbd5499b966202c0b68cb
+      internalID: 1310930224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_57
+      name: industrial_tileset_emissive_57
       rect:
         serializedVersion: 2
         x: 448
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bebe7ae2f85dd1f4e910b88c980712e8
-      internalID: -1260377745
+      spriteID: 7de0c84dcf5f45f448ee100284e2960f
+      internalID: -1228803285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_58
+      name: industrial_tileset_emissive_58
       rect:
         serializedVersion: 2
         x: 512
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaea037e923f39c4d9a727f3521e1b63
-      internalID: 1289781043
+      spriteID: 7e088cc2a05d5844d9388042ee4fd43d
+      internalID: 2098165006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_59
+      name: industrial_tileset_emissive_59
       rect:
         serializedVersion: 2
         x: 576
-        y: 192
+        y: 160
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b99c1cb6440540548b13b04687be7943
-      internalID: 206218691
+      spriteID: 3d712648c452a274cad6aa8175c7b545
+      internalID: -189076192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_60
+      name: industrial_tileset_emissive_60
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ebfb9b48d47a140aca79a262c0b486
-      internalID: -1546657754
+      spriteID: f67b4aa96b246094d912c942fdf91b3a
+      internalID: 787718595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_61
+      name: industrial_tileset_emissive_61
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e003e25d9c4fd224e914e7bbc1314037
-      internalID: -371525099
+      spriteID: 1060e68e532e3754ea3ffca250d0cf09
+      internalID: 319456123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_62
+      name: industrial_tileset_emissive_62
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5222ada8b31f9a64cabb0775f7cf8de7
-      internalID: 634657369
+      spriteID: 01405667892e5634d83b84a93c9bcf42
+      internalID: 627117730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_63
+      name: industrial_tileset_emissive_63
       rect:
         serializedVersion: 2
         x: 192
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6064f3fa62ca9c7439fdb4d8e7cf8900
-      internalID: -1622066463
+      spriteID: 871dde07f2db88646bef7aae8201e70b
+      internalID: -353194639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_64
+      name: industrial_tileset_emissive_64
       rect:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58d9ee2f31c74c941b2cb27aca154868
-      internalID: 697019891
+      spriteID: ed136e74c24e31347b6a72635089b4c5
+      internalID: -1110098604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_65
+      name: industrial_tileset_emissive_65
       rect:
         serializedVersion: 2
         x: 320
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b7f71be38f1a964f8d26c98718d796c
-      internalID: -1720253815
+      spriteID: 3325ce05a0b295944b7f22d43ddeacc3
+      internalID: 789825978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_66
+      name: industrial_tileset_emissive_66
       rect:
         serializedVersion: 2
         x: 384
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b4fa110616761b4191766651b712dcd
-      internalID: 877668281
+      spriteID: f62b734d00002f543af7a4f0d233ac41
+      internalID: 1986872249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_67
+      name: industrial_tileset_emissive_67
       rect:
         serializedVersion: 2
         x: 448
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e16334a6946859f4da257a9f7f888b43
-      internalID: -1402912223
+      spriteID: b98b0a025e891b440b3b407ea254da6c
+      internalID: 817010416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_68
+      name: industrial_tileset_emissive_68
       rect:
         serializedVersion: 2
         x: 512
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 196583fb251754d409bcc23566ae91d5
-      internalID: 186533329
+      spriteID: 7f3b7443b2e6f8e45b45407ebf51f9b2
+      internalID: 419892330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_69
+      name: industrial_tileset_emissive_69
       rect:
         serializedVersion: 2
         x: 576
-        y: 128
+        y: 96
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d319748594a2fe844b3701ca2c4bd2d2
-      internalID: 858097430
+      spriteID: 4d668eebfb0864f4597465f534b44714
+      internalID: 241978209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_70
+      name: industrial_tileset_emissive_70
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 429a57ff9620e7f449837312ae49f768
-      internalID: 131118403
+      spriteID: 95ec01966bbfe364899b73d222bf7851
+      internalID: 140073825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_71
+      name: industrial_tileset_emissive_71
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4415e9436a51814cad4769514e3de9c
-      internalID: 23257944
+      spriteID: 6d8a636bf723c884b950c12c1759a2a4
+      internalID: 1090965455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_72
+      name: industrial_tileset_emissive_72
       rect:
         serializedVersion: 2
         x: 128
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba52dcb43e39b0d43bac7e8abae43185
-      internalID: -879366392
+      spriteID: dbbc9c54f1626e54f8ce7e58cd054727
+      internalID: -583258479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_73
+      name: industrial_tileset_emissive_73
       rect:
         serializedVersion: 2
         x: 192
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 971cf6785311b2743a345e7bf5c7ad92
-      internalID: 1199034248
+      spriteID: 3b8a0c83df4bc8f46aab65b92640dde1
+      internalID: 449729174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_74
+      name: industrial_tileset_emissive_74
       rect:
         serializedVersion: 2
         x: 256
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c28fd7a6d5fdc894aaca4437d04614b9
-      internalID: 1452111254
+      spriteID: ff5d3f79aade522439703326d6990413
+      internalID: -820937357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_75
+      name: industrial_tileset_emissive_75
       rect:
         serializedVersion: 2
         x: 320
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72ba034015a260a48a0dc755c7d8789f
-      internalID: -106262146
+      spriteID: 13a7f33d0c2f42447b3c70c9afbfb383
+      internalID: 1652832940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_76
+      name: industrial_tileset_emissive_76
       rect:
         serializedVersion: 2
         x: 384
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dda4ab3ac59b6f84291c6f40b0442733
-      internalID: 1152153244
+      spriteID: 543c96de8f688cb4aa367e17cc2f9c30
+      internalID: 1383615503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_77
+      name: industrial_tileset_emissive_77
       rect:
         serializedVersion: 2
         x: 448
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27f2f57ac4e086048b9cac7296e03de8
-      internalID: 1340198295
+      spriteID: 7ff1bed98069aca4f96ac8bdf02837f1
+      internalID: -1845829929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_78
+      name: industrial_tileset_emissive_78
       rect:
         serializedVersion: 2
         x: 512
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f5ca71cd80c96d4cb0ab81090d807fa
-      internalID: 952245955
+      spriteID: 9d7664038e98d3b4198638fdeb9426ba
+      internalID: 1575801606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: industrial_tileset_79
+      name: industrial_tileset_emissive_79
       rect:
         serializedVersion: 2
         x: 576
-        y: 64
+        y: 32
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b656ceccbf0b1345a1c8f8c12ea025c
-      internalID: -575105815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: industrial_tileset_80
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7a291ea9da865449ac8543d72d8c78e
-      internalID: 1672545525
+      spriteID: 5e70bd6afd3f3b846a61fbde0f8ae8e7
+      internalID: 1246617520
       vertices: []
       indices: 
       edges: []
@@ -1911,97 +1889,94 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3fceafac32619264c9ad59b8ce31fbc1
+    spriteID: a989d29a0a4c5154b8aa2df3a4b9df05
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 00310fc78ea92604da780e87a94ff32b, type: 3}
-      name: _Emissive
+    secondaryTextures: []
     nameFileIdTable:
-      industrial_tileset_0: -246729696008504304
-      industrial_tileset_1: -1477375329
-      industrial_tileset_10: 2087438787
-      industrial_tileset_11: -983914095
-      industrial_tileset_12: -823979818
-      industrial_tileset_13: 1970312597
-      industrial_tileset_14: -311327218
-      industrial_tileset_15: 954246710
-      industrial_tileset_16: 1717663412
-      industrial_tileset_17: -184679891
-      industrial_tileset_18: -1014530800
-      industrial_tileset_19: 1059337663
-      industrial_tileset_2: 1777078161
-      industrial_tileset_20: -2088907221
-      industrial_tileset_21: 522293517
-      industrial_tileset_22: 380486402
-      industrial_tileset_23: -1540572663
-      industrial_tileset_24: 1755335328
-      industrial_tileset_25: 284155806
-      industrial_tileset_26: 1767600374
-      industrial_tileset_27: 887735577
-      industrial_tileset_28: 1770694541
-      industrial_tileset_29: -1854972930
-      industrial_tileset_3: 872704324
-      industrial_tileset_30: -1450885631
-      industrial_tileset_31: -427338212
-      industrial_tileset_32: 236920382
-      industrial_tileset_33: 426570987
-      industrial_tileset_34: -1481990617
-      industrial_tileset_35: -779153020
-      industrial_tileset_36: 1077399237
-      industrial_tileset_37: 779665067
-      industrial_tileset_38: -1677542553
-      industrial_tileset_39: 1798405072
-      industrial_tileset_4: 1975320520
-      industrial_tileset_40: -1622642581
-      industrial_tileset_41: -1767333933
-      industrial_tileset_42: 1208347406
-      industrial_tileset_43: -420748341
-      industrial_tileset_44: -1313445832
-      industrial_tileset_45: 1301475322
-      industrial_tileset_46: -1761430577
-      industrial_tileset_47: 671094275
-      industrial_tileset_48: 1860478580
-      industrial_tileset_49: 819409793
-      industrial_tileset_5: 1496191565
-      industrial_tileset_50: 267259637
-      industrial_tileset_51: -1945747405
-      industrial_tileset_52: 2039453269
-      industrial_tileset_53: -1011563638
-      industrial_tileset_54: 305090917
-      industrial_tileset_55: 1012506247
-      industrial_tileset_56: -1610175423
-      industrial_tileset_57: -1260377745
-      industrial_tileset_58: 1289781043
-      industrial_tileset_59: 206218691
-      industrial_tileset_6: -656026463
-      industrial_tileset_60: -1546657754
-      industrial_tileset_61: -371525099
-      industrial_tileset_62: 634657369
-      industrial_tileset_63: -1622066463
-      industrial_tileset_64: 697019891
-      industrial_tileset_65: -1720253815
-      industrial_tileset_66: 877668281
-      industrial_tileset_67: -1402912223
-      industrial_tileset_68: 186533329
-      industrial_tileset_69: 858097430
-      industrial_tileset_7: 548594664
-      industrial_tileset_70: 131118403
-      industrial_tileset_71: 23257944
-      industrial_tileset_72: -879366392
-      industrial_tileset_73: 1199034248
-      industrial_tileset_74: 1452111254
-      industrial_tileset_75: -106262146
-      industrial_tileset_76: 1152153244
-      industrial_tileset_77: 1340198295
-      industrial_tileset_78: 952245955
-      industrial_tileset_79: -575105815
-      industrial_tileset_8: -1032747869
-      industrial_tileset_80: 1672545525
-      industrial_tileset_9: -1840697470
+      industrial_tileset_emissive_0: 5287246918721202034
+      industrial_tileset_emissive_1: -51621008
+      industrial_tileset_emissive_10: -598825584
+      industrial_tileset_emissive_11: 1490312634
+      industrial_tileset_emissive_12: 75816654
+      industrial_tileset_emissive_13: -1455673635
+      industrial_tileset_emissive_14: 1473659622
+      industrial_tileset_emissive_15: 1366507005
+      industrial_tileset_emissive_16: 1698001704
+      industrial_tileset_emissive_17: 511345521
+      industrial_tileset_emissive_18: -292171481
+      industrial_tileset_emissive_19: -1719082179
+      industrial_tileset_emissive_2: -1116224403
+      industrial_tileset_emissive_20: 433121135
+      industrial_tileset_emissive_21: -1070173832
+      industrial_tileset_emissive_22: -1917061117
+      industrial_tileset_emissive_23: -2095648853
+      industrial_tileset_emissive_24: 121906172
+      industrial_tileset_emissive_25: 862197887
+      industrial_tileset_emissive_26: 2113870903
+      industrial_tileset_emissive_27: 1889931536
+      industrial_tileset_emissive_28: -1580855970
+      industrial_tileset_emissive_29: 1197341399
+      industrial_tileset_emissive_3: -1856555042
+      industrial_tileset_emissive_30: 1784068794
+      industrial_tileset_emissive_31: -1277667502
+      industrial_tileset_emissive_32: -643685561
+      industrial_tileset_emissive_33: 1464109491
+      industrial_tileset_emissive_34: 708008236
+      industrial_tileset_emissive_35: 1692846782
+      industrial_tileset_emissive_36: 507848900
+      industrial_tileset_emissive_37: -1743566062
+      industrial_tileset_emissive_38: -247974377
+      industrial_tileset_emissive_39: 1779855101
+      industrial_tileset_emissive_4: 69271226
+      industrial_tileset_emissive_40: -688204569
+      industrial_tileset_emissive_41: 1465207786
+      industrial_tileset_emissive_42: -724927825
+      industrial_tileset_emissive_43: -1033935826
+      industrial_tileset_emissive_44: 1119346102
+      industrial_tileset_emissive_45: 1201789490
+      industrial_tileset_emissive_46: -1359597610
+      industrial_tileset_emissive_47: -658080449
+      industrial_tileset_emissive_48: -56684211
+      industrial_tileset_emissive_49: -1608950720
+      industrial_tileset_emissive_5: 1550066552
+      industrial_tileset_emissive_50: 855958570
+      industrial_tileset_emissive_51: 1265659580
+      industrial_tileset_emissive_52: -176542826
+      industrial_tileset_emissive_53: -2108133140
+      industrial_tileset_emissive_54: 531083574
+      industrial_tileset_emissive_55: -1065119698
+      industrial_tileset_emissive_56: 1310930224
+      industrial_tileset_emissive_57: -1228803285
+      industrial_tileset_emissive_58: 2098165006
+      industrial_tileset_emissive_59: -189076192
+      industrial_tileset_emissive_6: 1873135961
+      industrial_tileset_emissive_60: 787718595
+      industrial_tileset_emissive_61: 319456123
+      industrial_tileset_emissive_62: 627117730
+      industrial_tileset_emissive_63: -353194639
+      industrial_tileset_emissive_64: -1110098604
+      industrial_tileset_emissive_65: 789825978
+      industrial_tileset_emissive_66: 1986872249
+      industrial_tileset_emissive_67: 817010416
+      industrial_tileset_emissive_68: 419892330
+      industrial_tileset_emissive_69: 241978209
+      industrial_tileset_emissive_7: -1543419864
+      industrial_tileset_emissive_70: 140073825
+      industrial_tileset_emissive_71: 1090965455
+      industrial_tileset_emissive_72: -583258479
+      industrial_tileset_emissive_73: 449729174
+      industrial_tileset_emissive_74: -820937357
+      industrial_tileset_emissive_75: 1652832940
+      industrial_tileset_emissive_76: 1383615503
+      industrial_tileset_emissive_77: -1845829929
+      industrial_tileset_emissive_78: 1575801606
+      industrial_tileset_emissive_79: 1246617520
+      industrial_tileset_emissive_8: -1725192579
+      industrial_tileset_emissive_9: -658107986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

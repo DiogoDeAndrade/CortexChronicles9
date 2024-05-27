@@ -52,6 +52,7 @@ public class CameraFollow2d : MonoBehaviour
 
     void CheckBounds()
     {
+        if (camera == null) return;
         if (cameraLimits == null) return;
 
         Bounds r = cameraLimits.bounds;
@@ -122,6 +123,11 @@ public class CameraFollow2d : MonoBehaviour
                     selectedPosition /= potentialObjects.Length;
                 }
             }
+
+            // Insta-move to target position, target has changed
+            transform.position = new Vector3(selectedPosition.x, selectedPosition.y, transform.position.z);
+
+            CheckBounds();
 
             return selectedPosition;
         }

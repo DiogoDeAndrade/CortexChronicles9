@@ -15,15 +15,20 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 
 ## Todo
 
-* Drone movement/tracking in chase mode
 * Level design
-* Secret level!
+* Story (start/end)
+* Main menu
+* Sound/Music
+  * Menu
+  * Logo
+  * Ingame
+* Build
 
 ## Art
 
-- Cat sprites by [Shepardskin](https://opengameart.org/users/shepardskin)
-- Drone sprites by [Craftpix]
-- Industrial tileset by [Craftpix]
+- Cat sprites by [Shepardskin](https://opengameart.org/users/shepardskin), licensed through the [CC0] license.
+- Drone sprites by [Craftpix], free to use through [own](https://craftpix.net/file-licenses/) license
+- Industrial tileset by [Craftpix], free to use through [own](https://craftpix.net/file-licenses/) license
 - Font [Forced Square] by Friendly Fonts, free for personal use.
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
