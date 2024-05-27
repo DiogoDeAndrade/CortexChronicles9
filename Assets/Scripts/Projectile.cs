@@ -44,7 +44,7 @@ public class Projectile : MonoBehaviour
             if (player != null) 
             {
                 float p = hitProbabilityInFlight;
-                if (Vector3.Distance(transform.position, origin) < 10.0f) p = 0.8f;
+                if (Vector3.Distance(transform.position, origin) < 20.0f) p = 0.8f;
                 player.ProbabilityHit(p);
             }
         }
@@ -69,7 +69,7 @@ public class Projectile : MonoBehaviour
                     if (player != null)
                     {
                         float p = hitProbabilityInGround;
-                        if (Vector3.Distance(transform.position, origin) < 10.0f) p = 0.8f;
+                        if (Vector3.Distance(transform.position, origin) < 20.0f) p = 0.8f;
                         player.ProbabilityHit(p);
                     }
                 }

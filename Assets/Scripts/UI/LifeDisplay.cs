@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LifeDisplay : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] displayObjects;
+    private GameObject[]    displayObjects;
+    [SerializeField]
+    private TextMeshProUGUI displayText;
 
     void Update()
     {
@@ -14,6 +17,10 @@ public class LifeDisplay : MonoBehaviour
         for (int i = 0; i < displayObjects.Length; i++)
         {
             displayObjects[i].SetActive(i < lives);
+        }
+        if (displayText)
+        {
+            displayText.text = $"x{lives}";
         }
     }
 }

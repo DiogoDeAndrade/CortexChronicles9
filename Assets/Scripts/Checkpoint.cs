@@ -14,10 +14,6 @@ public class Checkpoint : MonoBehaviour
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-    }
-
-    void Start()
-    {
         EnableCheckpoint(false);
     }
 

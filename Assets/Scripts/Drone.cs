@@ -307,14 +307,24 @@ public class Drone : MonoBehaviour
                 float   d = Vector3.Distance(p, playerPos);
                 if ((d > 0) && (d < minDist))
                 {
-                    // Raycast
+                    // Raycast to player - is it visible from the closest point?
                     var toPlayer = (playerPos - p) / d;
                     var hit = Physics2D.Raycast(p, toPlayer, d * 0.95f, environmentMask);
 
                     if (hit.collider == null)
                     {
-                        ret = p;
-                        minDist = d;
+                        // Check if we can move towards this point
+                        var toPoint = p - transform.position;
+                        var toPointDist = toPoint.magnitude;
+                        if (toPointDist > 1e-6)
+                        {
+                            hit = Physics2D.Raycast(transform.position, toPoint / toPointDist, toPointDist * 0.95f, environmentMask);
+                            if (hit.collider == null)
+                            {
+                                ret = p;
+                                minDist = d;
+                            }
+                        }
                     }
                 }
             }

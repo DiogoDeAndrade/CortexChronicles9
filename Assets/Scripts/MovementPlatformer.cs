@@ -82,7 +82,7 @@ public class MovementPlatformer : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        if (rb)
+        if ((rb) && (coyoteTime > 0))
         {
             rb.gravityScale = 0.0f;
         }
@@ -239,7 +239,10 @@ public class MovementPlatformer : MonoBehaviour
         // Need to check with actual is grounded or else coyote time will make the jump count reset immediately after flying off
         if (actualIsGrounded)
         {
-            rb.gravityScale = 0.0f;
+            if (coyoteTime > 0)
+            {
+                rb.gravityScale = 0.0f;
+            }
             currentJumpCount = maxJumpCount;
             if (airCollider) airCollider.enabled = false;
             if (groundCollider) groundCollider.enabled = true;
