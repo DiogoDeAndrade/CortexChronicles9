@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
-  m_MinWidth: -1
+  m_MinWidth: 180
   m_MinHeight: -1
   m_PreferredWidth: 180
   m_PreferredHeight: -1
@@ -552,9 +552,17 @@ MonoBehaviour:
   storyText: {fileID: 4900000, guid: e266e9bf864641c49a868405cd7d542f, type: 3}
   backgrounds:
   - {fileID: 11400000, guid: 579a460340b0a634fac694c8235cdfb3, type: 2}
+  - {fileID: 11400000, guid: f1ce751e3fa5bbf40b74b748aa7142f7, type: 2}
+  - {fileID: 11400000, guid: 6b8438fe0254a804cab60eee5f35858f, type: 2}
+  - {fileID: 11400000, guid: cbc7753eb978ee048ba959929e85d902, type: 2}
+  - {fileID: 11400000, guid: 1d793441a9a23324bb3ca933291f736a, type: 2}
+  - {fileID: 11400000, guid: 88d77a6ace73e69439d09a8da3c4be23, type: 2}
   actors:
   - {fileID: 11400000, guid: 6b3670844da40ce40836b465960c3a1d, type: 2}
   - {fileID: 11400000, guid: a74fb2387299c1c48888e499cf8d1dff, type: 2}
+  - {fileID: 11400000, guid: b7d442fc5a16bc24abff2582ce21ee6a, type: 2}
+  - {fileID: 11400000, guid: cf541e42b78f91b48af769803779de0e, type: 2}
+  - {fileID: 11400000, guid: ea4da24f6e355bb4eb21a49428dcc3e6, type: 2}
   nextScene: GameScene
 --- !u!1 &5825959536876675334
 GameObject:
@@ -815,6 +823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 776055831605220935}
   - component: {fileID: 8689163286981518946}
+  - component: {fileID: 2572108436987002477}
   - component: {fileID: 5319984805956638637}
   m_Layer: 5
   m_Name: Background
@@ -850,6 +859,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6241075564848421209}
   m_CullTransparentMesh: 1
+--- !u!225 &2572108436987002477
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241075564848421209}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &5319984805956638637
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,13 +19,37 @@ public class DialogueSystem : MonoBehaviour
             yield break;
         }
     }
-    protected class ChangeScene : DialogueElem
+    protected class ClearColor : DialogueElem
     {
-        public BackgroundDesc scene;
+        public Color color;
 
         public override void Run(DialogueSystem DS)
         {
-            DS.backgroundImage.sprite = scene.image;
+            FindAnyObjectByType<Camera>().backgroundColor = color;
+        }
+    }
+    protected class ChangeScene : DialogueElem
+    {
+        public BackgroundDesc scene;
+        public bool           transition = true;
+
+        public override bool shouldCoroutine => true;
+
+        public override IEnumerator RunCR(DialogueSystem DS)
+        {
+            if (transition)
+            {
+                DS.StartCoroutine(DS.FadeToCR(DS.textDisplay, 0, DS.fadeInTime));
+                yield return DS.StartCoroutine(DS.FadeToCR(DS.backgroundImage.GetComponent<CanvasGroup>(), 0, DS.fadeInTime));
+
+                DS.backgroundImage.sprite = scene.image;
+
+                yield return DS.StartCoroutine(DS.FadeToCR(DS.backgroundImage.GetComponent<CanvasGroup>(), 1, DS.fadeInTime));
+            }
+            else
+            {
+                DS.backgroundImage.sprite = scene.image;
+            }
         }
     }
     protected class Say : DialogueElem
@@ -129,12 +153,29 @@ public class DialogueSystem : MonoBehaviour
             if (tokens.Length == 0) continue;
             if (tokens[0] == "scene")
             {
-                var newElem = new ChangeScene() { scene = GetBackground(tokens[1]) };
+                bool transition = true;
+                if (tokens.Length > 2)
+                {
+                    if (tokens[2].ToLower() == "false") transition = false;
+                }
+
+                var scene = GetBackground(tokens[1]);
+                if (scene == null)
+                {
+                    Debug.LogError($"Can't find scene {tokens[1]}!");
+                }
+                var newElem = new ChangeScene() { scene = scene, transition = transition };
                 elems.Add(newElem);
                 if (startBackgroundSprite == null)
                 {
                     startBackgroundSprite = newElem.scene?.image;
                 }
+            }
+            else if (tokens[0] == "clear_color")
+            {
+                ColorUtility.TryParseHtmlString(tokens[1], out Color color);
+                var newElem = new ClearColor() { color = color };
+                elems.Add(newElem);
             }
             else
             {
@@ -142,13 +183,19 @@ public class DialogueSystem : MonoBehaviour
                 if (actor != null)
                 {
                     // Get text 
-                    string  text;
-                    var     startIndex = str.IndexOf('\"');
+                    string text;
+                    var startIndex = str.IndexOf('\"');
                     if (startIndex != -1)
                     {
                         var endIndex = str.IndexOf('\"', startIndex + 1);
-
-                        text = str.Substring(startIndex + 1, endIndex - startIndex - 1);
+                        if (endIndex == -1)
+                        {
+                            text = str.Substring(startIndex + 1);
+                        }
+                        else
+                        {
+                            text = str.Substring(startIndex + 1, endIndex - startIndex - 1);
+                        }
                     }
                     else
                     {

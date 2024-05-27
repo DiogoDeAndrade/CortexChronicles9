@@ -1,6 +1,67 @@
-scene discussion
+scene discussion false
 
 rowan "You are aware that what you're proposing is insane, right?!"
 
 nyx "Well, everything up until now has been, why stop now?!"
 
+rowan "There's a difference between 'difficult', 'unlikely' and insane!"
+
+nyx "You said it yourself, we have no options!"
+
+nyx "We need to take the nuke to orbit, and we don't have anybody on the inside of the spaceport..."
+
+nyx "Well, I can't infiltrate it for sure, especially after what happened with Cogwell!"
+
+nyx "So this is the only option..."
+
+scene lab_equipment true
+
+rowan "I can't believe this is the only shot..."
+
+nyx "Well, look at it this way: if this works, we'll have a great story!"
+
+scene lab_cat false
+
+rowan "Mind swap with a cat... That's some sci-fi stuff..."
+
+scientist "Well, there has been successful experiments with this technology!"
+
+scientist "The only problems was the duration and reversing the process..."
+
+scene lab_chair true
+
+nyx "And before you start complaining again, Rowan, even if this is a one-way ticket, it's worth it!"
+
+nyx "A world without the Prime Nexus... think about it!"
+
+rowan "I haven't done anything else in the last couple of years, Nyx..."
+
+rowan "If you're sure, I won't stop you..."
+
+rowan "Good luck!"
+
+scientist "Clear!"
+
+clear_color 0xFFFFFFFF
+
+scene cat_closeup true
+
+clear_color 0x00000000
+
+rowan "Nyx... You there?"
+
+cat_nyx "Meow..."
+
+scientist "Meow twice if you can understand us!"
+
+cat_nyx "Meow, meow..."
+
+scientist "Well, seems it worked..."
+
+rowan "Sigh... Time for phase 2..."
+
+rowan "Jax! Drop Nyx off at the spaceport!"
+
+scene spaceport true
+
+jax "Good luck, Nyx..."

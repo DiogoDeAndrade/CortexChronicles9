@@ -15,13 +15,12 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 
 ## Todo
 
-* Level design
 * Story (start/end)
-* Main menu
 * Sound/Music
-  * Menu
+  * Title
   * Logo
   * Ingame
+* Cheats for demo
 * Build
 
 ## Art
