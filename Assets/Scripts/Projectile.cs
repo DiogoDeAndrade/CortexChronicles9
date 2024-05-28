@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float      speed = 500.0f;
-    [SerializeField] private LayerMask  environmentMask;
-    [SerializeField] private LayerMask  playerMask;
-    [SerializeField] private float      hitProbabilityInFlight = 0.1f;
-    [SerializeField] private float      hitProbabilityInGround = 0.1f;
-    [SerializeField] private float      groundHitRadius = 10.0f;
-    [SerializeField] private GameObject hitFx;
+    [SerializeField] private float          speed = 500.0f;
+    [SerializeField] private LayerMask      environmentMask;
+    [SerializeField] private LayerMask      playerMask;
+    [SerializeField] private float          hitProbabilityInFlight = 0.1f;
+    [SerializeField] private float          hitProbabilityInGround = 0.1f;
+    [SerializeField] private float          groundHitRadius = 10.0f;
+    [SerializeField] private GameObject     hitFx;
+    [SerializeField] private AudioClip[]    sounds;
 
     float   distance = 1000.0f;
     Vector3 targetPos;
@@ -58,6 +59,12 @@ public class Projectile : MonoBehaviour
         {
             Quaternion rotation = Quaternion.LookRotation(Vector3.forward, normal);
             Instantiate(hitFx, targetPos, rotation);
+
+            if ((sounds != null) && (sounds.Length > 0))
+            {
+                var sound = sounds[Random.Range(0, sounds.Length)];
+                SoundManager.PlaySound(sound, Random.Range(0.25f, 0.5f), Random.Range(0.5f, 1.5f));
+            }
 
             if (hitProbabilityInGround > 0)
             {

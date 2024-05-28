@@ -548,6 +548,7 @@ MonoBehaviour:
   probabilityDecayByDistance: 0.005
   deadCatPrefab: {fileID: 2664018608431187223, guid: 27709131a04d01342bb5034d03d801fc, type: 3}
   catSpiritPrefab: {fileID: 3107627534637851272, guid: f47075b1bd474b04aa546ebfb4aefdfa, type: 3}
+  deadCatSound: {fileID: 8300000, guid: 5cac7812d06ef7d4cbdc2008dc089688, type: 3}
 --- !u!1 &6087391001913347848
 GameObject:
   m_ObjectHideFlags: 0

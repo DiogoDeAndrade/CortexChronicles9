@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float      probabilityDecayByDistance = 0.005f;
     [SerializeField] private GameObject deadCatPrefab;
     [SerializeField] private CatSpirit  catSpiritPrefab;
+    [SerializeField] private AudioClip  deadCatSound;
 
     float       currentHitProbability = 0.0f;
     Vector3     prevPos;
@@ -52,6 +53,10 @@ public class Player : MonoBehaviour
                 if (catSpiritPrefab)
                 {
                     Instantiate(catSpiritPrefab, transform.position, transform.rotation);
+                }
+                if (deadCatSound)
+                {
+                    SoundManager.PlaySound(deadCatSound, 0.5f, 1.0f);
                 }
             }
             else

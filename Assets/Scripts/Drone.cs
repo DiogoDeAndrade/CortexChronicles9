@@ -20,6 +20,9 @@ public class Drone : MonoBehaviour
     [SerializeField] private float          intraVolleyDelay = 0.1f;
     [SerializeField] private int            volleyCount = 6;
     [SerializeField] private Projectile     shotPrefab;
+    [SerializeField] private AudioSource    alarmSound;
+    [SerializeField] private AudioSource    notAlarmSound;
+    [SerializeField] private AudioClip      shootSound;
 
     private int         patrolIndex = 0;
     private Animator    animator;
@@ -156,6 +159,7 @@ public class Drone : MonoBehaviour
     {
         if (chaseCR != null)
         {
+            notAlarmSound?.Play();
             StopCoroutine(chaseCR);
             chaseCR = null;
         }
@@ -230,6 +234,8 @@ public class Drone : MonoBehaviour
     }
     IEnumerator TargetCR()
     {
+        alarmSound?.Play();
+
         scanLight.color = targetColor;
         while (true)
         {
@@ -267,6 +273,10 @@ public class Drone : MonoBehaviour
 
     void Shoot()
     {
+        if (shootSound)
+        {
+            SoundManager.PlaySound(shootSound, 1.0f, Random.Range(0.75f, 1.25f));
+        }
         Vector3 direction = scanLight.transform.up;
         direction = ChangeAngle(direction, Random.Range(-4.0f, 4.0f));
         Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction);

@@ -161,4 +161,10 @@ MonoBehaviour:
     m_Bits: 128
   hitProbabilityInFlight: 0.05
   hitProbabilityInGround: 0.1
+  groundHitRadius: 10
   hitFx: {fileID: 3419545014881545542, guid: 9f74e322bba791f43b66eb45ce8a1f32, type: 3}
+  sounds:
+  - {fileID: 8300000, guid: eca09ff472cb6bf448935e14f5091d0f, type: 3}
+  - {fileID: 8300000, guid: 4649d4bcbddf9c843ac4b41ef0d0fd5d, type: 3}
+  - {fileID: 8300000, guid: 4649d4bcbddf9c843ac4b41ef0d0fd5d, type: 3}
+  - {fileID: 8300000, guid: 4649d4bcbddf9c843ac4b41ef0d0fd5d, type: 3}

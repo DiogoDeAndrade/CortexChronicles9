@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Transform  initialSpawnPos;
     [SerializeField] private Player     playerPrefab;
     [SerializeField] private Checkpoint activeCheckpoint;
+    [SerializeField] private AudioClip  respawnSound;
 
     bool        detectedPlayer = false;
     Player      player;
@@ -61,6 +62,10 @@ public class LevelManager : MonoBehaviour
                         if (detectedPlayer)
                         {
                             GameManager.Instance.RemoveLives(1);
+                            if (respawnSound)
+                            {
+                                SoundManager.PlaySound(respawnSound);
+                            }
                         }
 
                         player = Instantiate(playerPrefab, spawnPos, spawnRotation);

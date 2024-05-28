@@ -15,7 +15,6 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 
 ## Todo
 
-* Sound
 * Build
 * Itch.io
 * Github
@@ -33,6 +32,11 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 - Main game music by [Migfus20], licensed through the [CC0] license.
 - Logo music by [João Camacho], licensed to Spellcaster Studios
 - Title music by [awrmacd], licensed through the [CC0] license.
+- Shot by [pgi], licensed through the [CC0] license.
+- Thump by [TechGeekMusic], licensed through the [CC0] license.
+- Ricochet by [cedarstudios], licensed through the [CC0] license.
+- Alarm sound by [jobro], licensed through the [CC0] license.
+- Meow sound by [tuberatanka](https://freesound.org/people/tuberatanka/), licensed through the [CC0] license.
 
 ## Code
 
