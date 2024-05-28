@@ -15,7 +15,7 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 
 ## Todo
 
-* Story (start/end)
+* Story (end)
 * Sound/Music
   * Title
   * Logo

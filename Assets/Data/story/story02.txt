@@ -1,0 +1,35 @@
+scene safe_room false
+
+wait 2
+
+cat_nyx "There's the terminals!"
+
+scene cat_typing true
+
+wait 1
+
+cat_nyx "Keyboards are harder with paws..."
+
+wait 1
+
+scene cityscape true
+
+wait 1
+
+jax "The nuke has gone through inspection..."
+
+jax "Aparentely, it's being loaded to the station!"
+
+rowan "And Nyx?"
+
+jax "Still looking for her..."
+
+wait 1
+
+scene rocket true
+
+wait 1
+
+scene end false
+
+wait 20

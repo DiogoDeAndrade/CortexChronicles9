@@ -28,6 +28,28 @@ public class DialogueSystem : MonoBehaviour
             FindAnyObjectByType<Camera>().backgroundColor = color;
         }
     }
+
+    protected class Wait : DialogueElem
+    {
+        public float waitTime;
+
+        public override bool shouldCoroutine => true;
+
+        public override IEnumerator RunCR(DialogueSystem DS)
+        {
+            yield return DS.StartCoroutine(DS.FadeToCR(DS.textDisplay, 0, DS.fadeInTime));
+
+            float t = 0.0f;
+            while (t < waitTime)
+            {
+                t += Time.deltaTime;
+                if (Input.anyKeyDown) break;
+                
+                yield return null;
+            }
+        }
+    }
+
     protected class ChangeScene : DialogueElem
     {
         public BackgroundDesc scene;
@@ -175,6 +197,11 @@ public class DialogueSystem : MonoBehaviour
             {
                 ColorUtility.TryParseHtmlString(tokens[1], out Color color);
                 var newElem = new ClearColor() { color = color };
+                elems.Add(newElem);
+            }
+            else if (tokens[0] == "wait")
+            {                
+                var newElem = new Wait() { waitTime = float.Parse(tokens[1]) };
                 elems.Add(newElem);
             }
             else
