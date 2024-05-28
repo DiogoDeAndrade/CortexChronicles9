@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class Cheats : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Checkpoint[] checkpoints;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        for (int i = 0; i < checkpoints.Length; i++)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+            {
+                Player player = FindAnyObjectByType<Player>();
+                if (player)
+                {
+                    player.transform.position = checkpoints[i].transform.position;
+                }
+            }
+        }
     }
 }

@@ -14,14 +14,15 @@ public class CameraFollow2d : MonoBehaviour
     [SerializeField] BoxCollider2D cameraLimits;
 
     private new Camera camera;
-    private Bounds allObjectsBound;
+    private Bounds  allObjectsBound;
+    private Vector3 prevTarget;
 
     void Start()
     {
         camera = GetComponent<Camera>();
 
         float currentZ = transform.position.z;
-        Vector3 targetPos = GetTargetPos();
+        Vector3 targetPos = prevTarget = GetTargetPos();
         transform.position = new Vector3(targetPos.x, targetPos.y, currentZ);
 
         CheckBounds();
@@ -45,9 +46,20 @@ public class CameraFollow2d : MonoBehaviour
         if (targetPos.y < r.yMin) r.position += new Vector2(0, targetPos.y - r.yMin);
         if (targetPos.y > r.yMax) r.position += new Vector2(0, targetPos.y - r.yMax);
 
-        transform.position = new Vector3(r.center.x, r.center.y, currentZ);
+        float distanceToLastTarget = Vector3.Distance(prevTarget, targetPos);
 
-        CheckBounds();
+        if (distanceToLastTarget > 100.0f)
+        {
+            transform.position = new Vector3(targetPos.x, targetPos.y, currentZ);
+        }
+        else
+        {
+            transform.position = new Vector3(r.center.x, r.center.y, currentZ);
+
+            CheckBounds();
+        }
+
+        prevTarget = targetPos;
     }
 
     void CheckBounds()
@@ -123,9 +135,6 @@ public class CameraFollow2d : MonoBehaviour
                     selectedPosition /= potentialObjects.Length;
                 }
             }
-
-            // Insta-move to target position, target has changed
-            transform.position = new Vector3(selectedPosition.x, selectedPosition.y, transform.position.z);
 
             CheckBounds();
 
