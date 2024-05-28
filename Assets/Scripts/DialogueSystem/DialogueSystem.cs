@@ -43,7 +43,11 @@ public class DialogueSystem : MonoBehaviour
             while (t < waitTime)
             {
                 t += Time.deltaTime;
-                if (Input.anyKeyDown) break;
+                if (Input.anyKeyDown)
+                {
+                    if (DS.skipSound != null) SoundManager.PlaySound(DS.skipSound, 0.5f, Random.Range(0.75f, 1.25f));
+                    break;
+                }
                 
                 yield return null;
             }
@@ -103,6 +107,7 @@ public class DialogueSystem : MonoBehaviour
                 {
                     if (Input.anyKeyDown)
                     {
+                        if (DS.skipSound != null) SoundManager.PlaySound(DS.skipSound, 0.5f, Random.Range(0.75f, 1.25f));
                         break;
                     }
 
@@ -120,6 +125,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private TextMeshProUGUI    actorName;
     [SerializeField] private TextMeshProUGUI    mainText;
     [SerializeField] private float              defaultFadeInTime = 0.5f;
+    [SerializeField] private AudioClip          skipSound;
     [SerializeField] private TextAsset          storyText;
     [SerializeField] private BackgroundDesc[]   backgrounds;
     [SerializeField] private ActorDesc[]        actors;
