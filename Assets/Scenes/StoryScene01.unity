@@ -533,6 +533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialoguer
       objectReference: {fileID: 0}
+    - target: {fileID: 6111593271450720524, guid: e40a56a894a60aa42bef87e3e9626ebc, type: 3}
+      propertyPath: skipSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 23070f535b00c4840a5b85dffa83a0a0, type: 3}
     - target: {fileID: 7789901204998845387, guid: e40a56a894a60aa42bef87e3e9626ebc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

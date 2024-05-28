@@ -152,6 +152,7 @@ MonoBehaviour:
   inactiveSprite: {fileID: 21300000, guid: 905a438b1d3bfab4b89d1421a022ef97, type: 3}
   onPS: {fileID: 2638599984111384855}
   offPS: {fileID: 0}
+  onSound: {fileID: 8300000, guid: 87b059322d834234296f448b756a8fb0, type: 3}
 --- !u!1 &5610453127724361149
 GameObject:
   m_ObjectHideFlags: 0

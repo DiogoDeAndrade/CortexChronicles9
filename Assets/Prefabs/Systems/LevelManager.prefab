@@ -335,6 +335,8 @@ MonoBehaviour:
   initialSpawnPos: {fileID: 4464462401480641961}
   playerPrefab: {fileID: 2685365786994897049, guid: d32c8ac42648d144d80fbacba37b7cf4, type: 3}
   activeCheckpoint: {fileID: 0}
+  respawnSound: {fileID: 0}
+  escapeScene: MainMenu
 --- !u!1001 &2909310799603591643
 PrefabInstance:
   m_ObjectHideFlags: 0

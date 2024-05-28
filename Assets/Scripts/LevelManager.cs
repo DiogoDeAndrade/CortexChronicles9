@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NaughtyAttributes;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] private Transform  initialSpawnPos;
-    [SerializeField] private Player     playerPrefab;
-    [SerializeField] private Checkpoint activeCheckpoint;
-    [SerializeField] private AudioClip  respawnSound;
+    [SerializeField] private Transform      initialSpawnPos;
+    [SerializeField] private Player         playerPrefab;
+    [SerializeField] private Checkpoint     activeCheckpoint;
+    [SerializeField] private AudioClip      respawnSound;
+    [SerializeField, Scene] private string  escapeScene;
 
     bool        detectedPlayer = false;
     Player      player;
@@ -34,7 +36,7 @@ public class LevelManager : MonoBehaviour
     {
         if (activeCheckpoint != null)
         {
-            activeCheckpoint.EnableCheckpoint(true);
+            activeCheckpoint.EnableCheckpoint(true, true);
             spawnPos = activeCheckpoint.transform.position;
             spawnRotation = activeCheckpoint.transform.rotation;
         }
@@ -81,10 +83,17 @@ public class LevelManager : MonoBehaviour
         {
             detectedPlayer = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameManager.Instance.GotoScene(escapeScene);
+        }
     }
 
     public void SetCheckpoint(Checkpoint checkpoint)
     {
+        if (activeCheckpoint == checkpoint) return;
+
         if (activeCheckpoint != null)
         {
             activeCheckpoint.EnableCheckpoint(false);
