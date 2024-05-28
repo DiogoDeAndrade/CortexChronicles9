@@ -15,13 +15,10 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 
 ## Todo
 
-* Story (end)
-* Sound/Music
-  * Title
-  * Logo
-  * Ingame
-* Cheats for demo
+* Sound
 * Build
+* Itch.io
+* Github
 
 ## Art
 
@@ -32,6 +29,10 @@ But, if we want to get creating with it, I'm using Unity 6 preview, so that kind
 - Everything else done by [Diogo de Andrade], licensed through the [CC0] license.
 
 ## Sound
+
+- Main game music by [Migfus20], licensed through the [CC0] license.
+- Logo music by [João Camacho], licensed to Spellcaster Studios
+- Title music by [awrmacd], licensed through the [CC0] license.
 
 ## Code
 

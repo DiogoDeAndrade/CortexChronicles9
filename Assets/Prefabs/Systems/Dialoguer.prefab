@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 1071956544348228247}
   - component: {fileID: 8044456040888707656}
   - component: {fileID: 6111593271450720524}
+  - component: {fileID: 2074291926224240146}
   m_Layer: 5
   m_Name: Dialoguer
   m_TagString: Untagged
@@ -569,6 +570,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cf541e42b78f91b48af769803779de0e, type: 2}
   - {fileID: 11400000, guid: ea4da24f6e355bb4eb21a49428dcc3e6, type: 2}
   nextScene: GameScene
+--- !u!114 &2074291926224240146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156042788824690731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fefa36073d38fb43b9d46586bfc8aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 8300000, guid: c538224aa1cef0349aab455562f90bb3, type: 3}
 --- !u!1 &5825959536876675334
 GameObject:
   m_ObjectHideFlags: 0

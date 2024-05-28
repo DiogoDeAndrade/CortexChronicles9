@@ -9,13 +9,14 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private CanvasGroup fader;
     [SerializeField] private float fadeTime = 0.5f;
+    [SerializeField] private AudioSource musicSource;
 
     const int maxLives = 9;
 
-    Player  player;
-    int     _nLives = maxLives;
-    float   targetAlpha;
-    Action  callback;
+    int         _nLives = maxLives;
+    float       targetAlpha;
+    Action      callback;
+    Coroutine   switchMusicCR;
 
     static GameManager _Instance = null;
     public static GameManager Instance => _Instance;
@@ -104,5 +105,43 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName);
         });
+    }
+
+    public void SwitchMusic(AudioClip clip)
+    {
+        if (switchMusicCR != null)
+        {
+            StopCoroutine(switchMusicCR);
+            switchMusicCR = null;
+        }
+        switchMusicCR = StartCoroutine(SwitchMusicCR(clip, 1.0f));
+    }
+
+    IEnumerator SwitchMusicCR(AudioClip clip, float targetVolume)
+    {
+        if (musicSource.clip != clip)
+        {
+            if (musicSource.isPlaying)
+            {
+                while (musicSource.volume > 0)
+                {
+                    musicSource.volume = Mathf.Clamp01(musicSource.volume - 2.0f * Time.deltaTime);
+                    yield return null;
+                };
+            }
+
+            musicSource.volume = 0;
+            musicSource.clip = clip;
+            musicSource.Play();
+
+            while (musicSource.volume < targetVolume)
+            {
+                musicSource.volume = Mathf.Clamp01(musicSource.volume + 2.0f * Time.deltaTime);
+                yield return null;
+            };
+            musicSource.volume = targetVolume;
+
+        }
+        switchMusicCR = null;
     }
 }
